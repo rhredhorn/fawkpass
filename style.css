@@ -1,0 +1,57 @@
+﻿body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Closer to Apple's font style */
+    background: linear-gradient(135deg, #9a4db5, #fc85ae); /* Diagonal gradient for a more dynamic look */
+    color: #333; /* Subtle text color for readability */
+    text-align: center; /* Ensures text is centrally aligned */
+    box-sizing: border-box; /* Helps manage padding and borders */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Adds spacing inside the container */
+}
+
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff; /* White color for text to stand out against darker backgrounds */
+}
+
+.roulette-hidden {
+    display: none;
+}
+
+.roulette-visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.spin-button {
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #673ab7; /* Deep purple for the button */
+    border: none;
+    border-radius: 10px; /* Rounded corners for a more modern look */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for interactive elements */
+    outline: none; /* Removes the outline to maintain a clean look */
+}
+
+    .spin-button:hover {
+        background-color: #9c27b0; /* Changes color on hover for a dynamic interaction */
+        transform: scale(1.05); /* Slightly enlarges the button on hover */
+    }
